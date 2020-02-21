@@ -3,15 +3,15 @@
 {
   document.querySelector('button').addEventListener('click', () => {
     const colors = document.querySelectorAll('input');
-    let selectedColor;
+    const selectedColors = [];
 
     colors.forEach(color => {
       if (color.checked === true) {
-        selectedColor = color.value;
+        selectedColors.push(color.value);
       }
     });
     const li = document.createElement('li');
-    li.textContent = selectedColor;
+    li.textContent = selectedColors.join(',');
     document.querySelector('ul').appendChild(li);
   });
 }
