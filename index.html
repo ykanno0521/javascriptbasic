@@ -6,21 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>JavaScript Basics</title>
   <style>
-    .my-color {
-      color: red;
-      background-color: skyblue;
+    li {
+      cursor: pointer;
     }
-
-    .my-border {
-      border-bottom: 4px solid orange;
+    li.done {
+      text-decoration: line-through;
     }
   </style>
 </head>
 <body>
-  <form>
-    <input type="text">
-    <button>Post</button>
-  </form>
+  <ul> <!-- e.currentTarget-->
+    <li>ToDo</li> <!-- e.target-->
+    <li>ToDo</li>
+    <li>ToDo</li>
+  </ul>
   <script src="js/main.js"></script>
 </body>
 </html>
