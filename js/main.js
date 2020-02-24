@@ -1,17 +1,8 @@
 'use strict';//エラーチェックのため
 
 {
-  document.querySelector('button').addEventListener('dblclick', () => {
-    console.log('Double Clicked!');
+  document.querySelector('form').addEventListener('submit', e => {
+    e.preventDefault(); //ページ遷移をキャンセル
+    console.log('submit');
   });
-
-  // document.addEventListener('mousemove', e => {
-  //   console.log(e.clientX, e.clientY)
-  // });
-
-  document.addEventListener('keydown', e => {
-    console.log(e.key);
-  });
-
-
 }
